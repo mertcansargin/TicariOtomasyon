@@ -1,0 +1,19 @@
+﻿@model  TicariOtomasyon.Models.Siniflar.Cariler
+@{
+    ViewBag.Title = "CariEkle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Cari Ekle</h2>
+<br />
+
+<form class="form-group" method="post">
+    <br />
+    @Html.LabelFor(x => x.CariAd, "Cari Adı:") @Html.TextBoxFor(x => x.CariAd, new { @class = "form-control" }) @Html.ValidationMessageFor(x => x.CariAd, "", new { @style = "color:red" }) <br />
+    @Html.LabelFor(x => x.CariSoyad, "Cari Soyadı:") @Html.TextBoxFor(x => x.CariSoyad, new { @class = "form-control" }) @Html.ValidationMessageFor(x => x.CariSoyad, "", new { @style = "color:orange" }) <br />
+    @Html.LabelFor(x => x.CariSehir, "Cari Şehir:") @Html.TextBoxFor(x => x.CariSehir, new { @class = "form-control" }) <br />
+    @Html.LabelFor(x => x.CariMail, "Cari Mail:") @Html.TextBoxFor(x => x.CariMail, new { @class = "form-control" })
+    <br />
+    <button class=" btn btn-info">Kaydet</button>
+</form>

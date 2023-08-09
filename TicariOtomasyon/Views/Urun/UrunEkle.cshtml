@@ -1,0 +1,24 @@
+﻿@model TicariOtomasyon.Models.Siniflar.Urun
+
+@{
+    ViewBag.Title = "UrunEkle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h2>Ürün Ekle</h2>
+<br />
+
+<form class="form-group" method="post">
+    @Html.LabelFor(x => x.UrunAdi, "Ürün Adı:") @Html.TextBoxFor(x => x.UrunAdi, new { @class = "form-control" })
+    @Html.LabelFor(x => x.Marka, "Ürün Marka:") @Html.TextBoxFor(x => x.Marka, new { @class = "form-control" })
+    @Html.LabelFor(x => x.Stok, "Ürün Stok:") @Html.TextBoxFor(x => x.Stok, new { @class = "form-control" })
+    @Html.LabelFor(x => x.AlisFiyat, "Ürün AlisFiyatı:") @Html.TextBoxFor(x => x.AlisFiyat, new { @class = "form-control" })
+    @Html.LabelFor(x => x.SatisFiyat, "Ürün SatisFiyatı:") @Html.TextBoxFor(x => x.SatisFiyat, new { @class = "form-control" })
+    @Html.LabelFor(x => x.Durum, "Ürün Durum:") @Html.TextBoxFor(x => x.Durum, new { @class = "form-control" })
+    @Html.LabelFor(x => x.UrunGorsel, "Ürün Gorsel Yolu:") @Html.TextBoxFor(x => x.UrunGorsel, new { @class = "form-control" })
+    @Html.LabelFor(x => x.Kategori.KategoriID, "Ürün Kategori:") @Html.DropDownListFor(x => x.Kategoriid, (List<SelectListItem>)ViewBag.dgr1, new { @class = "form-control" })
+    <br />
+    <button class=" btn btn-info">Kaydet</button>
+</form>
+
+

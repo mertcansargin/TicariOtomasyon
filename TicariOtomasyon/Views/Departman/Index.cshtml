@@ -1,0 +1,30 @@
+﻿@using TicariOtomasyon.Models.Siniflar
+@model List<Departman>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>Departman ID</th>
+        <th>Departman</th>
+        <th>Detay</th>
+        <th>SİL</th>
+        <th>GÜNCELLE</th>
+    </tr>
+
+    @foreach (var d in Model)
+    {
+        <tr>
+            <td>@d.Departmanid</td>
+            <td>@d.DepartmanAd</td>
+            <td><a href="/Departman/DepartmanDetay/@d.Departmanid" class="btn btn-default" style="background-color:lightcoral">Detay</a></td>
+            <td><a href="/Departman/DepartmanSil/@d.Departmanid" class="btn btn-danger">Sil</a></td>
+            <td><a href="/Departman/DepartmanGetir/@d.Departmanid" class="btn btn-success">Güncelle</a></td>
+        </tr>
+    }
+
+</table>
+<a href="/Departman/DepartmanEkle" class="btn btn-primary">Yeni Departman</a>
+

@@ -1,0 +1,19 @@
+﻿@model TicariOtomasyon.Models.Siniflar.Departman
+@{
+    ViewBag.Title = "DepartmanGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Departman Güncelleme</h2>
+<br />
+
+@using (Html.BeginForm("DepartmanGuncele", "Departman", FormMethod.Post))
+{<div class="form-group">
+        @Html.LabelFor(x => x.DepartmanAd, "Departman Adı: ")
+        @Html.TextBoxFor(x => x.DepartmanAd, new { @class = "form-control" })
+        @Html.HiddenFor(x => x.Departmanid)
+    </div>
+    <button class="btn btn-warning">Güncelle</button>
+}
+

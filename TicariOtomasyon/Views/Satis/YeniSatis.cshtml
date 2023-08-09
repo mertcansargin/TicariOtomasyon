@@ -1,0 +1,23 @@
+﻿@model  TicariOtomasyon.Models.Siniflar.SatisHareket
+@{
+    ViewBag.Title = "YeniSatis";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yeni Satış Sayfası</h2>
+
+
+<form class="form-group" method="post">
+    <br />
+    @Html.LabelFor(x => x.Urun, "Urun") @Html.DropDownListFor(x => x.Urunid, (List<SelectListItem>)ViewBag.dgr1, new { @class = "form-control" })
+    @Html.LabelFor(x => x.Cariler, "Cari") @Html.DropDownListFor(x => x.Cariid, (List<SelectListItem>)ViewBag.dgr2, new { @class = "form-control" })
+    @Html.LabelFor(x => x.Personel, "Personel") @Html.DropDownListFor(x => x.Personelid, (List<SelectListItem>)ViewBag.dgr3, new { @class = "form-control" })
+    @Html.LabelFor(x => x.Adet, "Adet") @Html.TextBoxFor(x => x.Adet, new { @class = "form-control" })
+    @Html.LabelFor(x => x.Fiyat, "Fiyat") @Html.TextBoxFor(x => x.Fiyat, new { @class = "form-control" })
+    @Html.LabelFor(x => x.ToplamTutar, "Toplam Tutar") @Html.TextBoxFor(x => x.ToplamTutar, new { @class = "form-control" })
+
+    <br />
+    <button class=" btn btn-info">Kaydet</button>
+
+
+</form>
