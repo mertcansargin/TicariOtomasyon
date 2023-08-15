@@ -63,7 +63,14 @@ namespace TicariOtomasyon.Controllers
             return RedirectToAction("Index");
         }
 
-        public ActionResult UrunListesi(Urun p) { return View(p); } 
+        public ActionResult UrunListesi()
+        {
+            List<SelectListItem> deger1 = (from x in c.Kategoris.ToList() select new SelectListItem { Text = x.KategoriAd, Value = x.KategoriID.ToString() }).ToList();
+            ViewBag.dgr1 = deger1;
+
+            var urunler = c.Uruns.Where(X => X.Durum == true).ToList();
+            return View(urunler);
+        } 
 
     }
 }

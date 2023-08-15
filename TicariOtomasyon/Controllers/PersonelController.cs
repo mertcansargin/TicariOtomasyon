@@ -51,5 +51,10 @@ namespace TicariOtomasyon.Controllers
 
             return RedirectToAction("Index");
         }
+
+        public ActionResult PersonelListesi() {
+            var degerler = c.Personels.ToList();
+            return View(degerler); 
+        }
     }
 }
