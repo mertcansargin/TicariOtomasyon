@@ -30,7 +30,6 @@ C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\roslyn\System
 C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\roslyn\System.IO.Compression.ZipFile.dll
 C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\roslyn\System.IO.FileSystem.dll
 C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\roslyn\System.Net.Http.dll
 C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\roslyn\System.Net.Sockets.dll
 C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\roslyn\System.Reflection.Metadata.dll
 C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
@@ -50,20 +49,6 @@ C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\roslyn\vbc.ex
 C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\roslyn\vbc.rsp
 C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\roslyn\VBCSCompiler.exe
 C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\Antlr3.Runtime.dll
-C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\EntityFramework.dll
-C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\EntityFramework.SqlServer.dll
-C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\Newtonsoft.Json.dll
-C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\System.Web.Helpers.dll
-C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\System.Web.Mvc.dll
-C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\System.Web.Optimization.dll
-C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\System.Web.Razor.dll
-C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\System.Web.WebPages.Deployment.dll
-C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\System.Web.WebPages.dll
-C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\System.Web.WebPages.Razor.dll
-C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\WebGrease.dll
 C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\EntityFramework.xml
 C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\EntityFramework.SqlServer.xml
 C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\System.Web.Helpers.xml
@@ -81,3 +66,8 @@ C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\obj\Debug\TicariO
 C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\obj\Debug\TicariOtomasyon.csproj.CopyComplete
 C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\obj\Debug\TicariOtomasyon.dll
 C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\obj\Debug\TicariOtomasyon.pdb
+C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\PagedList.xml
+C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\PagedList.Mvc.xml
+C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\obj\Debug\TicariOtomasyon.Migrations.kargo1deneme22.resources
+C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\obj\Debug\TicariOtomasyon.csproj.GenerateResource.cache
+C:\Users\Mert Can\Desktop\code\TicariOtomasyon\TicariOtomasyon\bin\QRCoder.dll

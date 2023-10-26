@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> @*burası custom için*@ 
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+
+<br />
+<br />
+
+<button class="btn btn-default" style="background-color:mediumseagreen" id="btn1">SUCCESS</button>
+<button class="btn btn-default" style="background-color:darkred" id="btn2">DENIELD</button>
+<button class="btn btn-default" style="background-color:darkorange" id="btn3">Custom Button</button>
+
+<script>
+    $('#btn1').click(function () {
+        swal("Good job!", "You clicked the button!", "success");
+    })
+    $('#btn2').click(function () {
+        swal("Oopss!", "You clicked wrong the button!", "error");
+    })
+    $('#btn3').click(function () {
+        Swal.fire({
+            title: 'Custom width, padding, color, background.',
+            width: 600,    
+            padding: '3em',
+            color: '#716add',
+            background: '#fff url("https://media.giphy.com/media/cXblnKXr2BQOaYnTni/giphy.gif")',
+            backdrop: `
+    rgba(0,0,123,0.4)
+    url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHpmejRqZHoyc2xzbGVobG1udG94bWV3ZmRtOHRvcGIwaG90Yno1cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DjclSiVtiB11C/giphy.gif")
+    left top
+    no-repeat
+  `
+        })
+    })
+</script>

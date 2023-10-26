@@ -5,41 +5,36 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 <br />
-<h2>Index</h2> 
+<h2>Index</h2>
 <br />
 <table class="table table-bordered">
     <tr>
-        <th>Fatura id</th>
-        <th>Fatura SeriNo</th>
-        <th>Fatura SıraNo</th>
+        <th>Fatura Seri Sıra No</th>
+
         <th>Vergi Dairesi</th>
         <th>Tarih</th>
         <th>Saat</th>
         <th>Toplam</th>
-        <th>TeslimEden</th>
-        <th>TeslimAlan</th>
         <th>Durum</th>
         <th>Güncelle</th>
-        
+        <th>Kalem</th>
+
 
     </tr>
     @foreach (var f in Model)
     {
 
         <tr>
-            <td>@f.Faturaid</td>
-            <td>@f.FaturaSeriNo</td>
-            <td>@f.FaturaSıraNo</td>
+            <td>@f.FaturaSeriNo @f.FaturaSıraNo</td>
             <td>@f.VergiDairesi</td>
-            <td>@f.Tarih</td>
+            <td>@Convert.ToDateTime(f.Tarih).ToString("dd/MM/yyyy")</td>
             <td>@f.Saat</td>
-            <td>@f.Toplam</td>
-            <td>@f.TeslimEden</td>
-            <td>@f.TeslimAlan</td>
+            <td>@f.Toplam ₺</td>
             <td><a href="/Fatura/FaturaDetay/@f.Faturaid" class="btn btn-info">Detaylar</a></td>
 
             @*<td><a href="/Urun/UrunSil/@f.Faturaid" class="btn btn-danger">Sil</a></td>*@
-        <td><a href="/Fatura/FaturaGetir/@f.Faturaid" class="btn btn-success">Güncelle</a></td>
+            <td><a href="/Fatura/FaturaGetir/@f.Faturaid" class="btn btn-success">Güncelle</a></td>
+            <td><a href="/Fatura/FaturaGetir/@f.Faturaid" class="btn btn-success">Kalem</a></td>
         </tr>
 
     }

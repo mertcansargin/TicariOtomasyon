@@ -13,10 +13,14 @@ namespace TicariOtomasyon.Controllers
         // GET: Urun
 
         Context c = new Context();
-        public ActionResult Index()
+        public ActionResult Index(string p)
         {
-            var urunler=c.Uruns.Where(X=>X.Durum==true).ToList();
-            return View(urunler);
+            var urunler=from x in c.Uruns select x;
+            if (!string.IsNullOrEmpty(p))
+            {
+                urunler=urunler.Where(x=>x.UrunAdi.Contains(p));
+            }
+            return View(urunler.ToList());
         }
 
         [HttpGet]
@@ -70,7 +74,29 @@ namespace TicariOtomasyon.Controllers
 
             var urunler = c.Uruns.Where(X => X.Durum == true).ToList();
             return View(urunler);
-        } 
+        }
+        [HttpGet]
+        public ActionResult SatisYap(int id)
+        {
+            List<SelectListItem> deger1 = (from x in c.Personels.ToList() select new SelectListItem { Text = x.PersonelAd, Value = x.Personelid.ToString() }).ToList();
+            ViewBag.dgr1 = deger1;
+
+            var deger2 = c.Uruns.Find(id);
+            ViewBag.dgr2 = deger2.Urunid;
+
+            var deger3=c.Uruns.Find(id);
+            ViewBag.dgr3 = deger3.SatisFiyat;
+            return View();
+        }
+        [HttpPost]
+        public ActionResult SatisYap(SatisHareket p)
+        {
+            p.Tarih = DateTime.Parse(DateTime.Now.ToShortDateString());
+            c.SatisHarekets.Add(p);
+            c.SaveChanges();
+            return RedirectToAction("Index","Satis");
+         
+        }
 
     }
 }
