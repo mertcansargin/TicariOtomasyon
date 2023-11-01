@@ -30,6 +30,6 @@ namespace TicariOtomasyon.Models.Siniflar
         public string Icerik { get; set; }
 
         [Column(TypeName = "Date")]
-        public string Tarih { get; set; }
+        public DateTime Tarih { get; set; }
     }
 }
