@@ -7,6 +7,7 @@ using TicariOtomasyon.Models.Siniflar;
 
 namespace TicariOtomasyon.Controllers
 {
+    [Authorize]
     public class CariController : Controller
     {
         // GET: Cari

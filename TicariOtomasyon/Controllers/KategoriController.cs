@@ -7,12 +7,13 @@ using System.Web.Mvc;
 using TicariOtomasyon.Models.Siniflar;
 
 namespace TicariOtomasyon.Controllers
-{
+{ [Authorize]
     public class KategoriController : Controller
     {
         // GET: Kategori
-
+        
         Context c= new Context();
+       
         public ActionResult Index(int sayfa=1)
         {
             var degerler=c.Kategoris.ToList().ToPagedList(sayfa,8);
@@ -44,6 +45,26 @@ namespace TicariOtomasyon.Controllers
             ktgr.KategoriAd = k.KategoriAd;
             c.SaveChanges();
             return RedirectToAction("Index");
+        }
+        public ActionResult KategoriAlt()
+        {
+            AltDegerSinif dgr= new AltDegerSinif();
+            dgr.Kategoriler = new SelectList(c.Kategoris, "KategoriID", "KategoriAd");
+            dgr.Urunler = new SelectList(c.Uruns, "UrunID", "UrunAd");
+            return View(dgr);
+        }
+        public JsonResult UrunGetir(int p)
+        {
+            var urunListesi=(from x in c.Uruns
+                             join y in c.Kategoris
+                             on x.Kategori.KategoriID equals y.KategoriID
+                             where x.Kategori.KategoriID== p
+                             select new
+                             {
+                                 Text=x.UrunAdi,
+                                 Value=x.Urunid.ToString()
+                             }).ToList();
+            return Json(urunListesi,JsonRequestBehavior.AllowGet);
         }
     }
 }

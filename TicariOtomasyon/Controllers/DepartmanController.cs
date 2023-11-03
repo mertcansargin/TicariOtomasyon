@@ -26,7 +26,7 @@ namespace TicariOtomasyon.Controllers
             c.SaveChanges();
             return RedirectToAction("Index");
         }
-
+        [Authorize(Roles ="1")]
         [HttpGet]
         public ActionResult DepartmanEkle() { return View(); }
 

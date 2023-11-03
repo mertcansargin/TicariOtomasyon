@@ -140,6 +140,7 @@
     <Compile Include="Controllers\CariController.cs" />
     <Compile Include="Controllers\CariPanelController.cs" />
     <Compile Include="Controllers\DepartmanController.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\FaturaController.cs" />
     <Compile Include="Controllers\GaleriController.cs" />
     <Compile Include="Controllers\GrafikController.cs" />
@@ -162,11 +163,13 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Siniflar\Admin.cs" />
+    <Compile Include="Models\Siniflar\AltDegerSinif.cs" />
     <Compile Include="Models\Siniflar\Cariler.cs" />
     <Compile Include="Models\Siniflar\Class1.cs" />
     <Compile Include="Models\Siniflar\Context.cs" />
     <Compile Include="Models\Siniflar\Departman.cs" />
     <Compile Include="Models\Siniflar\Detay.cs" />
+    <Compile Include="Models\Siniflar\DinamikFaturaClass.cs" />
     <Compile Include="Models\Siniflar\FaturaKalem.cs" />
     <Compile Include="Models\Siniflar\Faturalar.cs" />
     <Compile Include="Models\Siniflar\Gider.cs" />
@@ -227,6 +230,7 @@
     <Content Include="AdminLTE-3.0.4\dist\img\boxed-bg.png" />
     <Content Include="AdminLTE-3.0.4\dist\img\credit\american-express.png" />
     <Content Include="AdminLTE-3.0.4\dist\img\credit\cirrus.png" />
+    <Content Include="AdminLTE-3.0.4\dist\img\email.png" />
     <Content Include="AdminLTE-3.0.4\dist\img\credit\mastercard.png" />
     <Content Include="AdminLTE-3.0.4\dist\img\credit\mestro.png" />
     <Content Include="AdminLTE-3.0.4\dist\img\credit\paypal.png" />
@@ -3030,6 +3034,13 @@
     <Content Include="Views\CariPanel\GidenMesaj.cshtml" />
     <Content Include="Views\CariPanel\MesajDetay.cshtml" />
     <Content Include="Views\CariPanel\YeniMesaj.cshtml" />
+    <Content Include="Views\CariPanel\KargoTakip.cshtml" />
+    <Content Include="Views\CariPanel\CariKargoTakip.cshtml" />
+    <Content Include="Views\CariPanel\PartialAyarlar.cshtml" />
+    <Content Include="Views\CariPanel\PartialDuyurular.cshtml" />
+    <Content Include="Views\Error\PageError.cshtml" />
+    <Content Include="Views\Kategori\KategoriAlt.cshtml" />
+    <Content Include="Views\Fatura\DinamikFatura.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
